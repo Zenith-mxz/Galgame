@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  body{margin:0;background:linear-gradient(#2a2438,#4a3a52);display:flex;gap:6px;padding:8px;align-items:flex-end}
+  .frame{height:94vh;display:flex;align-items:flex-end}
+  .frame img,.frame svg{height:94vh;width:auto;display:block}
+</style></head>
+<body>
+<script src="../js/art.js"></script>
+<script>
+['kasumi','yuina','sion'].forEach(function(k, i){
+  var d = document.createElement('div');
+  d.className = 'frame';
+  d.innerHTML = Art.build(k,'normal',i+1);
+  document.body.appendChild(d);
+});
+</script>
+</body></html>
